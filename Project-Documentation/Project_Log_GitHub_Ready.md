@@ -1,0 +1,19 @@
+
+# ComplaintProof AI – Project Log
+
+| Day | Task | Status | Evidence Saved | Problems / Notes |
+|---|---|---|---|---|
+| Day 1 | Workspace setup | Completed | Folder structure and project log | Created the project workspace and organized the project files. |
+| Day 2 | Project charter and stakeholder analysis | Completed | Project_Charter.docx, Stakeholder_Map.docx | Defined business problem, objectives, scope, users, assumptions, project limitations, risks and success criteria. Reviewed stakeholder interest and influence ratings. Initial assumptions and requirements need validation through stakeholder investigation. |
+| Day 3 | Current-state process investigation | Completed | Current_State_Process.docx | Documented the initial food delivery workflow and investigation questions. Process requires validation against actual business information. |
+| Day 4 | Dataset Suitability Assessment | Completed | Dataset_Suitability_Assessment.docx | Defined business questions, dataset requirements and suitability criteria. Actual dataset suitability review is ongoing. |
+| Day 5 | Support ticket analysis | Completed | PostgreSQL query and result screenshot | Counted unique orders associated with support tickets. Query returned 10 unique orders. |
+| Day 6 | Support ticket and delivery data analysis | Completed | PostgreSQL query and result screenshot | Joined support tickets with deliveries using order_id. Retrieved matching order IDs and delivery statuses. |
+| Day 7 | Support ticket and restaurant analysis | Completed | PostgreSQL query and result screenshot | Joined support tickets, orders and restaurants to retrieve restaurant names for matching orders. |
+| Day 8 | Restaurant support ticket count | Completed | PostgreSQL query and result screenshot | Grouped support tickets by restaurant and counted tickets. Results showed one ticket for each listed restaurant. |
+| Day 9 | Delivery duration analysis | Completed | PostgreSQL query and result screenshot | Calculated delivery duration using pickup time and delivery time. Retrieved delivery durations for support-ticket orders. |
+| Day 10 | Average delivery duration | Completed | PostgreSQL query and result screenshot | Calculated average delivery duration from the deliveries table. Result was approximately 26 minutes and 4 seconds. |
+| Day 11 | Delivery duration threshold analysis | Completed | PostgreSQL query and result screenshot | Filtered deliveries above 30 minutes and sorted duration in descending order. Query returned 3 matching deliveries. |
+| Day 12 | SQL fundamentals and order analysis | Completed | SQL screenshots – order records, filtering and basic analysis | Practiced SELECT, FROM, WHERE, COUNT(*), SUM() and AVG() using the project database. Calculated total order amount (24,217.56), average order amount (60.5439) and order count (400). |
+| Day 13 | SQL metrics and complaint-linked delivery analysis | Completed | SQL screenshots – complaint-to-order join, unmatched order check, complaint order-status summary, delivery duration analysis and summary metrics | Analyzed 10 support tickets. All 10 matched orders and had delivered status. No unmatched orders were found. Calculated complaint-linked pickup-to-delivery average of 26.32 minutes and maximum of 43.40 minutes. |
+| Day 14 | SQL CTE and evidence checks | Completed | Screenshots of CTE query, delivery duration analysis, complaint grouping, percentage calculation and timestamps completeness check | Analyzed 10 complaint-linked deliveries using a CTE. Three deliveries (30%) exceeded 30 minutes from pickup to delivery. Two were associated with “Order arrived late” complaints and one with “Wrong order.” All 10 records had pickup and delivery timestamps. The 30-minute threshold is an analysis threshold, not a confirmed SLA. |
